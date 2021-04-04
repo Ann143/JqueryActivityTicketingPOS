@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+ <style>
+    body {
+        background-image: url('netflix.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      .container{
+          width: 35%;
+      }
+</style> 
+</head>
+
+<body>
+    <br><br><br><br>
+    <div class="container bg-primary p-1">
+        <h4>
+            <p class="h3" style="text-align: center;">TICKETING SYSTEM</p>
+            <small class="text-muted"></small>
+        </h4>
+
+        <form class="bg-white" style="padding: 12px;"><br>
+            <div class="form-group row  movies-type">
+                <label for="staticEmail" class="col-sm-2 col-form-label"><b>Ticket:</b></label>
+                <div class="col-sm-10 ">
+                    <select class="form-control">
+                        <option  data-price ="0">Select a Movie</option>
+                        <option  data-price ="240">Spiderman: Homecoming</option>
+                        <option  data-price ="200">War of the Planet of the Apes</option>
+                        <option  data-price ="280">Transformers: Last Knight</option>
+                        <option  data-price ="245">Justice League</option>
+                        <option  data-price ="175">Fast and the Furious</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row ">
+                <label for="price"  class="col-sm-2 col-form-label "><b>Price:</b></label>
+                <div class="col-sm-10">
+                    <p id="price">0</p> 
+                </div>     
+            </div>
+            <div class="form-group row">
+                <label for="quantity" class="col-sm-2 col-form-label"><b>Quantity:</b></label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="quantity" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="cash" class="col-sm-2 col-form-label"><b>Cash:</b></label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="cash" placeholder="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="total" class="col-sm-2 col-form-label"><b>Total:</b></label>
+                <div class="col-sm-10">
+                    <p id="total"> </p>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="change" class="col-sm-2 col-form-label"><b>Change:</b></label>
+                <div class="col-sm-10">
+                    <p  id="change"> </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
